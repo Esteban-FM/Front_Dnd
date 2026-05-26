@@ -31,16 +31,16 @@ export default function Login() {
     <div className="min-h-screen bg-[#111] scanlines flex items-center justify-center p-5 ">
       <div className="pixel-panel p-8 w-full max-w-sm">
 <br />
-        <h1 className="font-medieval text-[#c8a840] text-center text-3xl m-8 tracking-widest mb-2 glow-gold  ">
-          DnD Sesion
+        <h1 className="font-caudex  text-[#c8a840] text-center text-3xl m-8 tracking-widest mb-2 glow-gold  ">
+          DnD Session
         </h1>
-        <p className=" block font-medieval text-[#555] text-center text-sm ">
+        <p className=" block font-caudex text-[#555] text-center text-sm ">
          Gestor para Dungeon Masters
         </p>
 <br />
         <form onSubmit={handleLogin} className="flex flex-col gap-3 pt-0">
 
-          <label className="font-medieval text-[#aaa] text-sm text-center ">CORREO</label>
+          <label className="font-caudex text-[#aaa] text-sm text-center ">CORREO</label>
           <input
             className="pixel-input mb-1"
             type="email"
@@ -50,7 +50,7 @@ export default function Login() {
             required
           />
 
-          <label className="font-medieval text-[#aaa] text-sm text-center">CONTRASEÑA</label>
+          <label className="font-caudex text-[#aaa] text-sm text-center">CONTRASEÑA</label>
           <input
             className="pixel-input mb-1"
             type="password"
@@ -61,7 +61,7 @@ export default function Login() {
           />
 
           {error && (
-            <p className="font-medieval text-[#ff4444] text-[7px] text-center">
+            <p className="font-caudex text-[#ff4444] text-[7px] text-center">
               {error}
             </p>
           )}

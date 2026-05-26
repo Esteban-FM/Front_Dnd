@@ -15,9 +15,15 @@ body {
   font-family: 'Press Start 2P', monospace;
 }
 
-.font-medieval {
+.font-medieval-sharp {
+  font-family: 'MedievalSharp', serif;
+}
+.font-Metamorphous {
   font-family: 'Metamorphous', serif;
 }
+.font-caudex {
+  font-family: 'Caudex', serif;
+} 
 
 .font-vt {
   font-family: 'VT323', monospace;
