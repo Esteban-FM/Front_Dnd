@@ -2,12 +2,14 @@ import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/config";
 import { useNavigate, Link } from "react-router-dom";
+import ForgotPassword from "../components/ui/ForgotPassword";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showReset, setShowReset] = useState(false);
   const navigate = useNavigate();
 
   async function handleLogin(e) {
@@ -29,6 +31,9 @@ export default function Login() {
 
 
     <div className="min-h-screen bg-[#111] scanlines flex items-center justify-center p-5 ">
+      {showReset && <ForgotPassword onClose={() => setShowReset(false)} />}
+
+
       <div className="pixel-panel p-8 w-full max-w-sm">
 <br />
         <h1 className="font-caudex  text-[#c8a840] text-center text-3xl m-8 tracking-widest mb-2 glow-gold  ">
@@ -74,6 +79,12 @@ export default function Login() {
             {loading ? "CARGANDO..." : "▶ INGRESAR"}
           </button>
         </form>
+
+        <button
+          onClick={() => setShowReset(true)}
+          className="font-pixel text-[#555] text-[7px] w-full text-center mt-3 hover:text-[#c8a840] transition-colors cursor-pointer bg-transparent border-none">
+          ¿Olvidaste tu contraseña?
+        </button>
 
         <hr className="border-[#333] my-4" />
 
