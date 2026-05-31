@@ -19,7 +19,8 @@ export default function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       navigate("/role");
-    } catch (err) {
+    } catch (error) {
+        console.error(error);
       setError("Usuario o contraseña incorrectos");
     } finally {
       setLoading(false);

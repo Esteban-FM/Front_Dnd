@@ -1,0 +1,58 @@
+export const RACES = [
+  {
+    id: "human",
+    name: "Humano",
+    info: "+1 a todos los atributos",
+    bonus: { STR: 1, DEX: 1, CON: 1, INT: 1, WIS: 1, CHA: 1 },
+    baseHp: 8,
+  },
+  {
+    id: "elf",
+    name: "Elfo",
+    info: "+2 INT, +2 DEX",
+    bonus: { DEX: 2, INT: 2 },
+    baseHp: 6,
+  },
+  {
+    id: "dwarf",
+    name: "Enano",
+    info: "+2 CON, +2 STR",
+    bonus: { STR: 2, CON: 2 },
+    baseHp: 10,
+  },
+  {
+    id: "halfling",
+    name: "Mediano",
+    info: "+2 DEX, +1 CHA",
+    bonus: { DEX: 2, CHA: 1 },
+    baseHp: 6,
+  },
+  {
+    id: "halforc",
+    name: "Semiorco",
+    info: "+3 STR, +1 CON",
+    bonus: { STR: 3, CON: 1 },
+    baseHp: 12,
+  },
+  {
+    id: "tiefling",
+    name: "Tiefling",
+    info: "+2 CHA, +1 INT",
+    bonus: { CHA: 2, INT: 1 },
+    baseHp: 6,
+  },
+  {
+    id: "dragonborn",
+    name: "Dracónido",
+    info: "+2 STR, +1 CHA",
+    bonus: { STR: 2, CHA: 1 },
+    baseHp: 10,
+  },
+  {
+    id: "gnome",
+    name: "Gnomo",
+    info: "+2 INT, +1 DEX",
+    bonus: { INT: 2, DEX: 1 },
+    baseHp: 6,
+  },
+];
